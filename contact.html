@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>帝愛グループ公式サイト</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="teiai.jpg" alt="企業ロゴ" class="logo">
+            <h1>帝愛グループ公式サイト</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">会社概要</a></li>
+                    <li><a href="service.html">サービス</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+<main>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <form id="contact-form" action="submit.php" method="post">
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name"placeholder="例：伊藤開司" required>
+
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" placeholder="例：hanzaiteki.beer@gmail.com"required>
+
+                <label for="address">住所:</label>
+                <input type="text" id="address" name="address" placeholder="例：東京都練馬区下神井7-9-1" required>
+
+                <label for="message">お問い合わせ内容:</label>
+                <textarea id="message" name="message" rows="5" cols="40" placeholder="お問い合わせ内容を入力してください。" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+        <div class="container">
+            <p>&copy; 2023 teiai. All rights reserved.</p>
+            <div class="social-media">
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
