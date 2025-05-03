@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 40px;
+}
+
+.card {
+  background-color: #222;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
