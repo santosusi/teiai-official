@@ -2,22 +2,36 @@
   text-align: center;
   background-color: #111;
   color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
   font-family: 'Noto Sans JP', sans-serif;
-  padding: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .card {
-  background-color: #222;
+  background: #222;
   border: 2px solid #FFD700;
+  padding: 1rem;
+  width: 250px;
   border-radius: 10px;
-  padding: 20px;
-  max-width: 400px;
-  margin: 20px auto;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 0 10px #FFD70055;
 }
 
 .profile-img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 15px;
 }
+.quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
