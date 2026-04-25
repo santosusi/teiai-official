@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>帝愛グループ公式サイト</title>
+    <title>会社概要 — 帝愛グループ</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- head内に追加 -->
-<link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <div class="container">
-            <img src="teiai.jpg" alt="企業ロゴ" class="logo">
-            <h1>帝愛グループ公式サイト</h1>
+            <img src="teiai.jpg" alt="帝愛グループのロゴ" class="logo">
+            <h1 class="site-title">帝愛グループ公式サイト</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">ホーム</a></li>
                     <li><a href="service.html">サービス</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="employment.html">採用情報</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,27 +25,104 @@
 
     <section id="about" class="section">
         <div class="container">
-            <h2>会社概要</h2>
-            <p>私たち帝愛は主に消費者金融を軸に業務を行う大企業集団です。</p>
-            <p>会長兵藤和尊が創業後40年みなさまに愛されながら日本一の規模を誇る会社へと成長していきました。</p>
-            <p>さらには金融業以外にもカジノやホテル、レストラン、海運業を展開しています。</p>
-            <p>特に海運部門では、エスポワールのような賭博船を所有し、これを利用してカジノ事業も行っています。</p>
-            <figure>
-                <img src="hyoudou.jpg" alt="兵藤の写真" />
-                <figcaption>帝愛グループ会長、兵藤からのご挨拶。</figcaption>
-            </figure>
+            <div class="section-header reveal">
+                <span class="section-eyebrow">About Us</span>
+                <h2>会社概要</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3>帝愛グループについて</h3>
+                    <p>
+                        私たち帝愛グループは、消費者金融を基幹事業とした日本最大規模の総合企業集団です。
+                        創業以来40年にわたり、国民の皆様に愛され続け、今日の規模へと成長してまいりました。
+                    </p>
+                    <p>
+                        会長・兵藤和尊のもと、金融・カジノ・ホテル・レストラン・海運業と多角的な事業を展開。
+                        国内外を問わず、VIPから一般のお客様まで幅広く支持をいただいております。
+                    </p>
+                    <p>
+                        特に海運部門では、カジノ船「エスポワール号」を所有・運航し、
+                        洋上という特別な空間で他に類を見ないエンターテインメントをご提供しています。
+                    </p>
+
+                    <div style="margin-top: 32px; display: flex; gap: 40px; flex-wrap: wrap;">
+                        <div>
+                            <div style="font-family: var(--font-display); font-size: 2.2rem; color: var(--gold); font-weight: 900;">40<span style="font-size: 1rem; margin-left:4px;">年</span></div>
+                            <div style="font-size: 0.8rem; letter-spacing: 0.15em; color: var(--gray);">創業からの歴史</div>
+                        </div>
+                        <div>
+                            <div style="font-family: var(--font-display); font-size: 2.2rem; color: var(--gold); font-weight: 900;">5<span style="font-size: 1rem; margin-left:4px;">事業</span></div>
+                            <div style="font-size: 0.8rem; letter-spacing: 0.15em; color: var(--gray);">多角的な展開</div>
+                        </div>
+                        <div>
+                            <div style="font-family: var(--font-display); font-size: 2.2rem; color: var(--gold); font-weight: 900;">No.1</div>
+                            <div style="font-size: 0.8rem; letter-spacing: 0.15em; color: var(--gray);">国内規模</div>
+                        </div>
+                    </div>
+                </div>
+
+                <figure class="about-figure reveal">
+                    <img src="hyoudou.jpg" alt="兵藤会長の写真">
+                    <figcaption>帝愛グループ会長 兵藤和尊 — ご挨拶</figcaption>
+                </figure>
+            </div>
+
+            <!-- Philosophy -->
+            <div style="margin-top: 80px;">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Philosophy</span>
+                    <h2>経営理念</h2>
+                </div>
+                <div class="philosophy-grid">
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">一</span>
+                        <h3>圧倒的感謝</h3>
+                        <p>お客様、社会、すべてへの感謝を忘れずに事業に臨む。</p>
+                    </div>
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">二</span>
+                        <h3>誠実と責任</h3>
+                        <p>約束は必ず守る。それが信頼の礎であり、帝愛の誇りである。</p>
+                    </div>
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">三</span>
+                        <h3>絶対的強さ</h3>
+                        <p>業界の頂点に立ち続けるための不断の努力と覚悟を持ち続ける。</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-</body>
-<footer>
-    <div class="container">
-        <p>&copy; 2023 teiai. All rights reserved.</p>
-        <div class="social-media">
-            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-        </div>
-    </div>
-</footer>
-</html>
 
+    <footer>
+        <div class="container">
+            <p class="footer-logo">帝愛グループ</p>
+            <ul class="footer-nav">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="employment.html">採用情報</a></li>
+            </ul>
+            <div class="footer-divider"></div>
+            <div class="social-media">
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            </div>
+            <p class="footer-copy">&copy; 2023 帝愛グループ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>

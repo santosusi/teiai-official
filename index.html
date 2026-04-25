@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- ヘッダー -->
     <header>
         <div class="container">
-            <img src="teiai.jpg" alt="帝愛グループのロゴ - 圧倒的感謝" class="logo">
+            <img src="teiai.jpg" alt="帝愛グループのロゴ" class="logo">
             <h1 class="site-title">帝愛グループ公式サイト</h1>
             <nav>
                 <ul class="nav-menu">
@@ -23,27 +24,125 @@
         </div>
     </header>
 
-    <!-- メインビジュアル -->
+    <!-- ヒーロー -->
     <main>
         <section class="hero">
-            <h2>私たちにあなたの夢と希望をお手伝いさせてください！</h2>
-            <p>愛と真心のパートナー、未来はあなた達の手にある――帝愛です。</p>
+            <span class="hero-badge">TEIAI GROUP — SINCE 1983</span>
+            <h2>
+                私たちにあなたの<br>
+                <span>夢と希望をお手伝い</span>させてください。
+            </h2>
+            <div class="hero-divider"></div>
+            <p>愛と真心のパートナー、未来はあなた達の手にある。<br>帝愛グループは、あなたの可能性を全力でサポートします。</p>
+            <div style="margin-top: 48px; opacity: 0; animation: fadeInUp 1s ease forwards 1.8s;">
+                <a href="service.html" class="hero-cta">サービスを見る &nbsp;→</a>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Our Philosophy</span>
+                    <h2>帝愛の精神</h2>
+                </div>
+                <div class="philosophy-grid">
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">一</span>
+                        <h3>圧倒的感謝</h3>
+                        <p>お客様からの信頼と感謝を何より大切にし、全力で使命を果たします。</p>
+                    </div>
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">二</span>
+                        <h3>冷徹な誠実</h3>
+                        <p>どんな状況でも約束は必ず守る。それが帝愛グループの誇りです。</p>
+                    </div>
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">三</span>
+                        <h3>絶対の忠誠</h3>
+                        <p>グループ全員が一丸となり、最高のサービスをお届けします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Nav Cards -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Navigation</span>
+                    <h2>サービス一覧</h2>
+                </div>
+                <div class="service-grid">
+                    <div class="service-item reveal">
+                        <div class="service-img-wrap">
+                            <img src="FC8nhV7aIAAPW0K.jpg" alt="良心的な金利" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-tag">Finance</span>
+                            <h3>良心的な金利</h3>
+                            <p>お客様第一の柔軟な金利システム。無理のない返済計画をご提案。</p>
+                        </div>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-img-wrap">
+                            <img src="hotel.jpg" alt="TEIAI HOTEL" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-tag">Hospitality</span>
+                            <h3>TEIAI HOTEL</h3>
+                            <p>国内外のVIPに支持される帝愛グループ直営ホテル。</p>
+                        </div>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-img-wrap">
+                            <img src="esupowa-ru.jpeg" alt="エスポワール号" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-tag">Casino</span>
+                            <h3>カジノ船エスポワール号</h3>
+                            <p>洋上での特別な体験を。世界最大級の賭博船で至高の一夜を。</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center; margin-top: 40px;">
+                    <a href="service.html" class="hero-cta reveal">全サービスを見る &nbsp;→</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- フッター -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 帝愛グループ. All rights reserved.</p>
+            <p class="footer-logo">帝愛グループ</p>
+            <ul class="footer-nav">
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="employment.html">採用情報</a></li>
+            </ul>
+            <div class="footer-divider"></div>
             <div class="social-media">
                 <a href="#"><img src="twitter-logo-201908.webp" alt="Twitter"></a>
                 <a href="#"><img src="facebook.webp" alt="Facebook"></a>
             </div>
+            <p class="footer-copy">&copy; 2023 帝愛グループ. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
+    <script>
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
-

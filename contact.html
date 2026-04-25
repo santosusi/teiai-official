@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>帝愛グループ - お問い合わせ</title>
+    <title>お問い合わせ — 帝愛グループ</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
+
     <header>
         <div class="container">
-            <img src="teiai.jpg" alt="企業ロゴ" class="logo">
-            <h1>帝愛グループ公式サイト</h1>
+            <img src="teiai.jpg" alt="帝愛グループのロゴ" class="logo">
+            <h1 class="site-title">帝愛グループ公式サイト</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">ホーム</a></li>
                     <li><a href="about.html">会社概要</a></li>
                     <li><a href="service.html">サービス</a></li>
+                    <li><a href="employment.html">採用情報</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,35 +26,72 @@
     <main>
         <section id="contact" class="section">
             <div class="container">
-                <h2>お問い合わせ</h2>
-                <form id="contact-form" action="submit.php" method="post">
-                    <label for="name">お名前:</label>
-                    <input type="text" id="name" name="name" placeholder="例：伊藤開司" required>
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Contact Us</span>
+                    <h2>お問い合わせ</h2>
+                </div>
 
-                    <label for="email">メールアドレス:</label>
-                    <input type="email" id="email" name="email" placeholder="例：hanzaiteki.beer@gmail.com" required>
+                <div class="contact-wrapper">
+                    <div class="contact-intro reveal">
+                        <p>ご不明な点やご相談は、下記フォームよりお気軽にお問い合わせください。<br>担当者より折り返しご連絡いたします。</p>
+                    </div>
 
-                    <label for="address">住所:</label>
-                    <input type="text" id="address" name="address" placeholder="例：東京都練馬区下神井7-9-1" required>
+                    <form id="contact-form" action="submit.php" method="post" class="reveal">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" placeholder="例：伊藤開司" required>
+                        </div>
 
-                    <label for="message">お問い合わせ内容:</label>
-                    <textarea id="message" name="message" rows="5" placeholder="お問い合わせ内容を入力してください。" required></textarea>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" placeholder="例：hanzaiteki.beer@gmail.com" required>
+                        </div>
 
-                    <button type="submit">送信</button>
-                </form>
+                        <div class="form-group">
+                            <label for="address">ご住所</label>
+                            <input type="text" id="address" name="address" placeholder="例：東京都練馬区下神井7-9-1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容</label>
+                            <textarea id="message" name="message" rows="6" placeholder="お問い合わせ内容を入力してください。" required></textarea>
+                        </div>
+
+                        <button type="submit">送信する &nbsp;→</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 teiai. All rights reserved.</p>
+            <p class="footer-logo">帝愛グループ</p>
+            <ul class="footer-nav">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="service.html">サービス</a></li>
+                <li><a href="employment.html">採用情報</a></li>
+            </ul>
+            <div class="footer-divider"></div>
             <div class="social-media">
                 <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
                 <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
             </div>
+            <p class="footer-copy">&copy; 2023 帝愛グループ. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 120);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>帝愛グループ - サービス</title>
+    <title>サービス — 帝愛グループ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,11 +11,13 @@
     <header>
         <div class="container">
             <img src="teiai.jpg" alt="帝愛ロゴ" class="logo">
-            <h1>帝愛グループ公式サイト</h1>
+            <h1 class="site-title">帝愛グループ公式サイト</h1>
             <nav>
                 <ul>
+                    <li><a href="index.html">ホーム</a></li>
                     <li><a href="about.html">会社概要</a></li>
-                    <li><a href="index.html">お問い合わせ</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="employment.html">採用情報</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,37 +25,66 @@
 
     <section id="services" class="section">
         <div class="container">
-            <h2>サービス一覧</h2>
+            <div class="section-header reveal">
+                <span class="section-eyebrow">Our Services</span>
+                <h2>サービス一覧</h2>
+            </div>
+
             <div class="service-grid">
 
-                <div class="service-item">
-                    <img src="FC8nhV7aIAAPW0K.jpg" alt="良心的な金利です" class="service-img">
-                    <h3>良心的な金利</h3>
-                    <p>お客様第一の柔軟な金利システムをご提供します。</p>
+                <div class="service-item reveal">
+                    <div class="service-img-wrap">
+                        <img src="FC8nhV7aIAAPW0K.jpg" alt="良心的な金利" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-tag">Finance</span>
+                        <h3>良心的な金利</h3>
+                        <p>お客様第一の柔軟な金利システムをご提供します。無理のない返済計画で、あなたの夢を支えます。</p>
+                    </div>
                 </div>
 
-                <div class="service-item">
-                    <img src="genteijanken.jpeg" alt="限定じゃんけん" class="service-img">
-                    <h3>カジノイベント</h3>
-                    <p>刺激的な「限定じゃんけん」など、独自のイベントを開催。</p>
+                <div class="service-item reveal">
+                    <div class="service-img-wrap">
+                        <img src="genteijanken.jpeg" alt="限定じゃんけん" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-tag">Casino Event</span>
+                        <h3>カジノイベント</h3>
+                        <p>刺激的な「限定じゃんけん」など、独自のイベントを開催。一瞬の選択が、人生を変える。</p>
+                    </div>
                 </div>
 
-                <div class="service-item">
-                    <img src="hotel.jpg" alt="TEIAI HOTEL" class="service-img">
-                    <h3>TEIAI HOTEL</h3>
-                    <p>国内外のVIPに支持される帝愛グループ直営ホテル。</p>
+                <div class="service-item reveal">
+                    <div class="service-img-wrap">
+                        <img src="hotel.jpg" alt="TEIAI HOTEL" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-tag">Hospitality</span>
+                        <h3>TEIAI HOTEL</h3>
+                        <p>国内外のVIPに支持される帝愛グループ直営ホテル。洗練された空間で、特別なひとときをご堪能ください。</p>
+                    </div>
                 </div>
 
-                <div class="service-item">
-                    <img src="esupowa-ru.jpeg" alt="エスポワール号" class="service-img">
-                    <h3>カジノ船エスポワール号</h3>
-                    <p>洋上での特別な体験を。世界最大級の賭博船。</p>
+                <div class="service-item reveal">
+                    <div class="service-img-wrap">
+                        <img src="esupowa-ru.jpeg" alt="エスポワール号" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-tag">Casino Cruise</span>
+                        <h3>カジノ船エスポワール号</h3>
+                        <p>洋上での特別な体験を。世界最大級の賭博船。夜の海を舞台に、運命の一夜をお楽しみください。</p>
+                    </div>
                 </div>
 
-                <div class="service-item">
-                    <img src="kare-.jpg" alt="帝愛カレー" class="service-img">
-                    <h3>帝愛特製カレー</h3>
-                    <p>自社開発のレトルト食品で日常にちょっとした贅沢を。</p>
+                <div class="service-item reveal">
+                    <div class="service-img-wrap">
+                        <img src="kare-.jpg" alt="帝愛カレー" class="service-img">
+                    </div>
+                    <div class="service-content">
+                        <span class="service-tag">Food & Lifestyle</span>
+                        <h3>帝愛特製カレー</h3>
+                        <p>自社開発のレトルト食品で日常にちょっとした贅沢を。帝愛のクオリティを、食卓へ。</p>
+                    </div>
                 </div>
 
             </div>
@@ -62,14 +93,33 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 帝愛グループ. All rights reserved.</p>
+            <p class="footer-logo">帝愛グループ</p>
+            <ul class="footer-nav">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">会社概要</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="employment.html">採用情報</a></li>
+            </ul>
+            <div class="footer-divider"></div>
             <div class="social-media">
                 <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
                 <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
                 <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
             </div>
+            <p class="footer-copy">&copy; 2023 帝愛グループ. All rights reserved.</p>
         </div>
     </footer>
 
+    <script>
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
