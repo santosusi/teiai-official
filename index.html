@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会社概要 — 帝愛グループ</title>
+    <title>帝愛グループ公式サイト</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- ヘッダー -->
     <header>
         <div class="container">
             <img src="teiai.jpg" alt="帝愛グループのロゴ" class="logo">
             <h1 class="site-title">帝愛グループ公式サイト</h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">ホーム</a></li>
+                <ul class="nav-menu">
+                    <li><a href="about.html">会社概要</a></li>
                     <li><a href="service.html">サービス</a></li>
                     <li><a href="contact.html">お問い合わせ</a></li>
                     <li><a href="employment.html">採用情報</a></li>
@@ -23,285 +24,124 @@
         </div>
     </header>
 
-    <!-- ========== 会社概要 ========== -->
-    <section id="about" class="section">
-        <div class="container">
-
-            <div class="section-header reveal">
-                <span class="section-eyebrow">About Us</span>
-                <h2>会社概要</h2>
+    <!-- ヒーロー -->
+    <main>
+        <section class="hero">
+            <span class="hero-badge">TEIAI GROUP — SINCE 1983</span>
+            <h2>
+                私たちにあなたの<br>
+                <span>夢と希望をお手伝い</span>させてください。
+            </h2>
+            <div class="hero-divider"></div>
+            <p>愛と真心のパートナー、未来はあなた達の手にある。<br>帝愛グループは、あなたの可能性を全力でサポートします。</p>
+            <div style="margin-top: 48px; opacity: 0; animation: fadeInUp 1s ease forwards 1.8s;">
+                <a href="service.html" class="hero-cta">サービスを見る &nbsp;→</a>
             </div>
+        </section>
 
-            <!-- 代表挨拶 + 写真 -->
-            <div class="about-grid" style="margin-bottom: 0;">
-                <div class="about-text reveal">
-                    <h3>代表あいさつ</h3>
-                    <p>
-                        私たち帝愛グループは、消費者金融を基幹事業とした日本最大規模の総合企業集団です。
-                        創業以来、国民の皆様に愛され続け、今日の規模へと成長してまいりました。
-                    </p>
-                    <p>
-                        金融・カジノ・ホテル・レストラン・海運業と多角的な事業を展開し、
-                        国内外を問わずVIPから一般のお客様まで幅広い信頼をいただいております。
-                    </p>
-                    <p>
-                        我々は常に「圧倒的感謝」の精神をもって事業に臨み、
-                        日本経済の発展と皆様の豊かな生活の実現に貢献してまいります。
-                    </p>
-                    <p style="margin-top: 24px; font-family: var(--font-display); color: var(--gold-light); font-size: 1.05rem; letter-spacing: 0.1em; line-height: 2;">
-                        帝愛ファイナンス株式会社<br>
-                        代表取締役会長　兵藤 和尊
-                    </p>
+        <!-- Philosophy Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Our Philosophy</span>
+                    <h2>帝愛の精神</h2>
                 </div>
-                <figure class="about-figure reveal">
-                    <img src="hyoudou.jpg" alt="兵藤会長の写真">
-                    <figcaption>帝愛グループ会長 兵藤和尊</figcaption>
-                </figure>
-            </div>
-
-            <!-- 数値ハイライト -->
-            <div class="stat-highlights reveal">
-                <div class="stat-item">
-                    <div class="stat-num">17兆<sup>円</sup></div>
-                    <div class="stat-label">グループ連結売上高</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-num">25兆<sup>円</sup></div>
-                    <div class="stat-label">資本金</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-num">103</div>
-                    <div class="stat-label">全国店舗数</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-num">2,059</div>
-                    <div class="stat-label">従業員数</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-num">No.1</div>
-                    <div class="stat-label">国内規模</div>
+                <div class="philosophy-grid">
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">一</span>
+                        <h3>圧倒的感謝</h3>
+                        <p>お客様からの信頼と感謝を何より大切にし、全力で使命を果たします。</p>
+                    </div>
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">二</span>
+                        <h3>冷徹な誠実</h3>
+                        <p>どんな状況でも約束は必ず守る。それが帝愛グループの誇りです。</p>
+                    </div>
+                    <div class="philosophy-item reveal">
+                        <span class="philosophy-num">三</span>
+                        <h3>絶対の忠誠</h3>
+                        <p>グループ全員が一丸となり、最高のサービスをお届けします。</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <!-- 会社データテーブル -->
-            <div class="section-header reveal" style="text-align:left; margin-bottom: 16px;">
-                <span class="section-eyebrow">Company Data</span>
-                <h2 style="font-size: 1.6rem;">会社データ</h2>
-            </div>
-
-            <table class="company-table reveal">
-                <tr>
-                    <th>商号</th>
-                    <td><strong>帝愛ファイナンス株式会社</strong></td>
-                </tr>
-                <tr>
-                    <th>主な事業内容</th>
-                    <td>消費者金融事業、不動産担保金融事業、事業者金融事業</td>
-                </tr>
-                <tr>
-                    <th>本社所在地</th>
-                    <td>東京都○○区○○○○　帝愛ビル</td>
-                </tr>
-                <tr>
-                    <th>電話番号</th>
-                    <td>03－○○○○－○○○○</td>
-                </tr>
-                <tr>
-                    <th>創業年月日</th>
-                    <td>19○○年9月1日</td>
-                </tr>
-                <tr>
-                    <th>設立年月日</th>
-                    <td>19○○年4月1日</td>
-                </tr>
-                <tr>
-                    <th>資本金</th>
-                    <td><strong>25兆638億3,252万円</strong></td>
-                </tr>
-                <tr>
-                    <th>代表者</th>
-                    <td><strong>兵藤 和尊</strong>（代表取締役会長）</td>
-                </tr>
-                <tr>
-                    <th>決算期</th>
-                    <td>3月31日（年1回）</td>
-                </tr>
-                <tr>
-                    <th>従業員数</th>
-                    <td>2,059名</td>
-                </tr>
-                <tr>
-                    <th>店舗数</th>
-                    <td>全国主要都市 103店舗</td>
-                </tr>
-                <tr>
-                    <th>売上高</th>
-                    <td>
-                        2兆646億円（単体）<br>
-                        <span style="color: var(--gold); font-weight: bold;">17兆1,153億円</span>（グループ連結）
-                    </td>
-                </tr>
-                <tr>
-                    <th>上場証券取引所</th>
-                    <td>日本証券取引所（市場第一部）</td>
-                </tr>
-                <tr>
-                    <th>株主総会</th>
-                    <td>6月</td>
-                </tr>
-                <tr>
-                    <th>会計監査人</th>
-                    <td>有限責任監査法人トマソン</td>
-                </tr>
-                <tr>
-                    <th>主要取引金融機関</th>
-                    <td>株式会社四菱UKO銀行</td>
-                </tr>
-                <tr>
-                    <th>加盟団体</th>
-                    <td>
-                        <div class="tag-list">
-                            <span class="tag">日本貸金事業協会</span>
-                            <span class="tag">一般社団法人 日本クレジット協会</span>
-                            <span class="tag">一般社団法人 日本経済団体連合会</span>
+        <!-- Quick Nav Cards -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-eyebrow">Navigation</span>
+                    <h2>サービス一覧</h2>
+                </div>
+                <div class="service-grid">
+                    <div class="service-item reveal">
+                        <div class="service-img-wrap">
+                            <img src="FC8nhV7aIAAPW0K.jpg" alt="良心的な金利" class="service-img">
                         </div>
-                    </td>
-                </tr>
-            </table>
-
-        </div>
-    </section>
-
-    <!-- ========== 福利厚生・制度 ========== -->
-    <section class="section" style="background: #0d0c00;">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-eyebrow">Employee Benefits</span>
-                <h2>福利厚生・社内制度</h2>
-            </div>
-
-            <div class="welfare-grid">
-
-                <div class="welfare-card reveal">
-                    <div class="welfare-card-icon">🏥</div>
-                    <h3>帝愛健康保険（帝愛健保）</h3>
-                    <p>
-                        全従業員を対象とした独自の健康保険制度。
-                        地下労働者を含む全員が自動加入となっており、
-                        給与（ペリカ）から保険料が天引きされます。
-                        社員証提示にて各提携医療機関にてご利用いただけます。
-                    </p>
+                        <div class="service-content">
+                            <span class="service-tag">Finance</span>
+                            <h3>良心的な金利</h3>
+                            <p>お客様第一の柔軟な金利システム。無理のない返済計画をご提案。</p>
+                        </div>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-img-wrap">
+                            <img src="hotel.jpg" alt="TEIAI HOTEL" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-tag">Hospitality</span>
+                            <h3>TEIAI HOTEL</h3>
+                            <p>国内外のVIPに支持される帝愛グループ直営ホテル。</p>
+                        </div>
+                    </div>
+                    <div class="service-item reveal">
+                        <div class="service-img-wrap">
+                            <img src="esupowa-ru.jpeg" alt="エスポワール号" class="service-img">
+                        </div>
+                        <div class="service-content">
+                            <span class="service-tag">Casino</span>
+                            <h3>カジノ船エスポワール号</h3>
+                            <p>洋上での特別な体験を。世界最大級の賭博船で至高の一夜を。</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="welfare-card reveal">
-                    <div class="welfare-card-icon">🤝</div>
-                    <h3>ハラスメント相談室</h3>
-                    <p>
-                        近年の社会的要請を踏まえ、パワハラ防止講習会の実施に合わせて設置。
-                        完全防音・二重扉を採用したプライバシー保護設計で、
-                        安心してご相談いただける環境を整備しております。
-                        ※相談内容は厳重に管理されます。
-                    </p>
-                </div>
-
-                <div class="welfare-card reveal">
-                    <div class="welfare-card-icon">🍽️</div>
-                    <h3>社員食堂 / カフェテリア</h3>
-                    <p>
-                        本社内に社員食堂を完備。また本社3階にはお洒落なカフェテリアも設置されており、
-                        お昼のひとときをゆったりとお過ごしいただけます。
-                        もちろん外出しての昼食も可能です。
-                    </p>
-                </div>
-
-                <div class="welfare-card reveal">
-                    <div class="welfare-card-icon">🏦</div>
-                    <h3>労働組合</h3>
-                    <p>
-                        帝愛には労働組合も設置されております。
-                        毎年2月には春闘を実施し、従業員の声を経営陣へ届けるための
-                        様々な取り組みを行っております。
-                        また、目安箱を設置し、日常的な意見収集にも努めております。
-                    </p>
-                </div>
-
-                <div class="welfare-card reveal">
-                    <div class="welfare-card-icon">🎰</div>
-                    <h3>グループ施設 社員優待</h3>
-                    <p>
-                        カジノ船エスポワール号・帝愛カジノイベント等グループ施設への
-                        社員優待制度あり。限定じゃんけん等の特別イベントへの参加権を
-                        付与する場合があります。
-                    </p>
-                </div>
-
-                <div class="welfare-card reveal">
-                    <div class="welfare-card-icon">📦</div>
-                    <h3>帝愛特製カレー 支給</h3>
-                    <p>
-                        自社開発の帝愛特製レトルトカレーを福利厚生品として支給。
-                        日常の食卓に帝愛クオリティをお届けします。
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== 経営理念 ========== -->
-    <section class="section">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-eyebrow">Philosophy</span>
-                <h2>経営理念</h2>
-            </div>
-            <div class="philosophy-grid">
-                <div class="philosophy-item reveal">
-                    <span class="philosophy-num">一</span>
-                    <h3>圧倒的感謝</h3>
-                    <p>お客様、社会、すべてへの感謝を忘れずに事業に臨む。</p>
-                </div>
-                <div class="philosophy-item reveal">
-                    <span class="philosophy-num">二</span>
-                    <h3>誠実と責任</h3>
-                    <p>約束は必ず守る。それが信頼の礎であり、帝愛の誇りである。</p>
-                </div>
-                <div class="philosophy-item reveal">
-                    <span class="philosophy-num">三</span>
-                    <h3>絶対的強さ</h3>
-                    <p>業界の頂点に立ち続けるための不断の努力と覚悟を持ち続ける。</p>
+                <div style="text-align:center; margin-top: 40px;">
+                    <a href="service.html" class="hero-cta reveal">全サービスを見る &nbsp;→</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
+    <!-- フッター -->
     <footer>
         <div class="container">
             <p class="footer-logo">帝愛グループ</p>
             <ul class="footer-nav">
-                <li><a href="index.html">ホーム</a></li>
+                <li><a href="about.html">会社概要</a></li>
                 <li><a href="service.html">サービス</a></li>
                 <li><a href="contact.html">お問い合わせ</a></li>
                 <li><a href="employment.html">採用情報</a></li>
             </ul>
             <div class="footer-divider"></div>
             <div class="social-media">
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-logo-201908.webp" alt="Twitter"></a>
+                <a href="#"><img src="facebook.webp" alt="Facebook"></a>
             </div>
             <p class="footer-copy">&copy; 2023 帝愛グループ. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
     <script>
+        // Reveal on scroll
         const reveals = document.querySelectorAll('.reveal');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, i) => {
                 if (entry.isIntersecting) {
-                    setTimeout(() => entry.target.classList.add('visible'), i * 90);
+                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
                 }
             });
-        }, { threshold: 0.08 });
+        }, { threshold: 0.1 });
         reveals.forEach(el => observer.observe(el));
     </script>
 </body>
